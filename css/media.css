@@ -1,0 +1,160 @@
+
+
+
+
+
+
+  @media (max-width: 1024px){
+    .categorias{
+      display: inline-block;
+      color: #4d2035;
+      text-decoration: none;
+      outline: none;
+      font-size: 12px;
+    }
+
+    .intro-header {
+      font-family: Gotham;
+      font-size: 10pt;
+      color: #562435;
+      text-align: center;
+      margin-top: calc(100vh / 10);
+      width: 100%;
+      line-height: 2em;
+      padding-bottom: 2em;
+  }
+
+  .intro-header-bot {
+    font-family: Gotham;
+    font-size: 11pt;
+    color: #562435;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.share {
+    background-color: #4d2035;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+    transition: 0.5s ease-in-out;
+}
+
+
+.comprar-top {
+    float: right;
+    background: #2f7e34;
+    border: none;
+    height: 2.45em;
+    width: 30%;
+    color: #fff;
+    font-size: 11px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+  @media (max-width: 768px){
+
+    .container {
+      /* position: relative; */
+      /* max-width: 60%; */
+      max-width: 64%;
+      margin: 0 auto;
+      height: 95vh;
+      padding: 5%;
+      float: right;
+      padding-bottom: 0;
+      padding-top: 0;
+      width: 100%;
+      overflow: hidden;}
+
+
+      .categorias {
+      font-size: 10px }
+
+      .intro-header {
+        font-size: 10pt;
+      }
+
+}
+
+
+
+  @media (max-width: 500px){
+    .container {display: none;}
+    .menu-cat{
+      margin-left: 0;
+      margin: 0 auto;
+      display: block;
+       text-align: center;
+     }
+    .intro-header{
+      margin-left: 0
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    }
+    .m-left{
+      margin-left: 0
+    }
+
+    .btn-compra{
+      padding: 0;
+      margin: 1em auto;
+      text-align: center;
+      display: block;
+      width: 50%;
+    }
+
+    .share{
+      margin-left: 22%;
+    }
+
+    .comprar-top{display: none}
+
+
+    .menu {
+    width: 100%;
+    height: 3.5em;
+  }
+
+
+  .menu p {
+    font-size: 6pt;
+    width: 100%;
+    line-height: 1em;
+     margin-left: 0;
+    text-align: center;
+}
+
+
+  .menu-cat {
+    margin: 3em auto 0;
+  }
+
+
+  .logo-gabriela{
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 1em auto;
+  }
+
+  .scene{display: none}
+  #scene{display: none}
+
+}
