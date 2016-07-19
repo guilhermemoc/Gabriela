@@ -357,6 +357,12 @@ table {
     height: 0;
   }
 }
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+}
 .menu {
   width: 100%;
   height: 1.5em;
@@ -366,12 +372,16 @@ table {
 }
 .menu p {
   font-family: g-light;
-  font-size: 10pt;
+  font-size: 7pt;
   color: #fbb533;
   text-align: left;
   width: 100%;
   line-height: 2em;
   margin-left: 1%;
+  vertical-align: middle;
+  margin-top: 5px;
+  font-weight: lighter;
+  letter-spacing: 2.5px;
 }
 .menu p strong {
   font-family: Gotham;
@@ -379,40 +389,88 @@ table {
 .logo-gabriela {
   margin-bottom: 1em;
 }
+.content-mus {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
 .intro-header {
   font-family: Gotham;
-  font-size: 13pt;
+  font-size: 11pt;
   color: #562435;
   text-align: center;
-  margin-top: calc(100vh / 10);
+  margin-top: calc(100vh / 4);
   width: 100%;
-  line-height: 2em;
+  line-height: 1.5em;
   padding-bottom: 2em;
+  letter-spacing: 2px;
+  font-weight: lighter;
 }
 .intro-header-bot {
   font-family: Gotham;
-  font-size: 13pt;
+  font-size: 7pt;
   color: #562435;
   text-align: center;
   width: 100%;
   font-weight: 600;
   line-height: 2em;
+  margin-top: 1px;
+  float: left;
 }
 .m-left {
-  margin-left: 30%;
+  margin-left: 35%;
 }
 .btn-compra {
-  width: 100%;
-  height: 3.5em;
+  width: 57%;
+  height: 4.5em;
   border-radius: 24px;
   background-color: #2f7e34;
   color: #fff;
   border: none;
   margin-top: 2em;
-  transition: 0.4s ease-in;
+  transition: 0.2s ease-in;
+  margin: 2em auto;
+  display: block;
+  position: relative;
+  margin-left: 57%;
+  font-family: g-book;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  outline: none;
 }
 .btn-compra:hover {
-  background-color: #4d2035;
+  background-color: #155119;
+  outline: none;
+  cursor: pointer;
+}
+.thumb {
+  width: 130px;
+  text-align: center;
+  margin: 0em auto;
+  display: block;
+  float: right;
+}
+.btn-compra-bottom {
+  width: 46%;
+  height: 4.5em;
+  border-radius: 24px;
+  background-color: #2f7e34;
+  color: #fff;
+  border: none;
+  margin-top: 2em;
+  transition: 0.2s ease-in;
+  margin: 2em auto;
+  position: relative;
+  font-family: g-book;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  outline: none;
+}
+.btn-compra-bottom:hover {
+  background-color: #155119;
+  outline: none;
   cursor: pointer;
 }
 .bottom-bar {
@@ -434,24 +492,93 @@ table {
 }
 .share {
   background-color: #4d2035;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
   text-align: center;
   border: none;
-  margin-left: 0.5%;
-  margin-bottom: 0.5%;
-  transition: 0.5s ease-in-out;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  transition: 0.2s ease-in-out;
 }
 .share:hover {
   background-color: #2f7e34;
   color: #fbb533 !important;
   cursor: pointer;
 }
+.text-copy {
+  display: inline-block;
+  margin-left: 2%;
+  font-size: 10px;
+  font-family: arial, sans-serif;
+  color: #4d2035;
+}
+.seta-down {
+  color: #4d2035;
+  font-weight: 100;
+  position: fixed;
+  z-index: 100000000000000000;
+}
+.seta-down:hover {
+  color: #2f7e34;
+}
 .espetaculo {
   width: 100%;
   height: 100vh;
   background-color: #4d2035;
+}
+.social {
+  background-color: #4d2035;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  margin-left: 0.5%;
+  margin-bottom: 0.5%;
+  transition: 0.2s ease-in-out;
+  float: right;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.social:hover {
+  background-color: #2f7e34;
+  color: #fbb533 !important;
+  cursor: pointer;
+}
+.social1 {
+  margin-right: 1.5%;
+}
+.barra {
+  width: 25px;
+  height: 2px;
+  background: #d53627;
+  text-align: center;
+  margin: -5px auto 19px auto;
+  display: block;
+  margin-left: 55%;
+}
+.barra-h1 {
+  width: 1.5em;
+  height: 3px;
+  background: #d53627;
+  text-align: center;
+  margin: 2.4em auto;
+  display: block;
+  position: absolute;
+}
+.centered-bar {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-left: 30%;
+}
+.mob-only {
+  display: none;
+}
+.desk-only {
+  display: block;
 }
 .navigation {
   border-radius: 50%;
@@ -476,4 +603,93 @@ table {
   background-color: transparent;
   border: 1px solid #4d2035;
   cursor: pointer;
+}
+.musical {
+  width: 100%;
+  height: 100vh;
+  background-color: #fbb533;
+}
+.musical .musical-left {
+  background-image: url("../images/bg-musical.jpg");
+  height: 100vh;
+  z-index: 99999999999999;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.musical .musical-right {
+  background-color: #fbb533;
+  margin: 10vh auto 0;
+  width: 45%;
+}
+.musical .musical-right h1 {
+  font-family: g-bold;
+  font-size: 1.5em;
+  color: #4d2035;
+  text-align: left;
+  float: left;
+  padding-bottom: 0.5em;
+}
+.musical .musical-right hr {
+  background-color: #4d2035;
+}
+.musical .musical-right p {
+  margin: 0.5em auto;
+  width: 100%;
+  line-height: 21px;
+  font-family: Arial, sans-serif;
+  font-size: 12.5px;
+  float: left;
+  color: #4d2035;
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+.musical .btn-compre {
+  width: 40%;
+  height: 3em;
+  border-radius: 24px;
+  background-color: #2f7e34;
+  color: #fff;
+  border: none;
+  margin-top: 2em;
+  transition: 0.4s ease-in;
+}
+.musical .btn-compre:hover {
+  background-color: #4d2035;
+  cursor: pointer;
+}
+.musical .teatro-left {
+  background-image: url("../images/bg-teatro-big.jpg");
+  height: 100vh;
+  z-index: 99999999999999;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.musical .teatro-right {
+  background-color: #fbb533;
+  margin: 30vh auto 0;
+  width: 39%;
+}
+.musical h1 {
+  font-family: g-bold;
+  font-size: 1.5em;
+  color: #4d2035;
+  text-align: left;
+  float: left;
+  padding-bottom: 0.5em;
+}
+.musical hr {
+  background-color: #4d2035;
+}
+.musical p {
+  margin: 0.5em auto;
+  width: 88%;
+  line-height: 21px;
+  font-family: Arial, sans-serif;
+  font-size: 12.5px;
+  float: left;
+  color: #4d2035;
+  padding-top: 1em;
+  padding-bottom: 0em;
 }

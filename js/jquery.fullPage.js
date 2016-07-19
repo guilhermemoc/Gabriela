@@ -155,8 +155,8 @@
             paddingTop: 0,
             paddingBottom: 0,
             fixedElements: null,
-            responsive: 0, //backwards compabitility with responsiveWiddth
-            responsiveWidth: 0,
+            responsive: 500, //backwards compabitility with responsiveWiddth
+            responsiveWidth: 500,
             responsiveHeight: 0,
 
             //Custom selectors
@@ -2925,5 +2925,15 @@
             return '<div class="' + SCROLLABLE + '"><div class="fp-scroller"></div></div>';
         }
     };
+
+
+
+    $(window).resize(function(){
+    	if ($(window).width() <= 500){
+    		autoScrolling:false
+    	}
+    });
+
+
 
 });

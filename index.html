@@ -3,13 +3,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Gabriela, um musical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <meta name="language" content="pt-br">
-    <meta name="author" content="Agência Feeshop">
+    <meta name="author" content="Gabriela o musical">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="">
     <meta property="og:title" content="">
@@ -24,10 +24,8 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
-
-
 
       <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
@@ -35,11 +33,15 @@
 
       <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
       <script src="js/jquery.easings.min.js"></script>
+      <script src="js/pop-up.js"></script>
 
       <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
       <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-
       <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
+
+
 
       <script type="text/javascript">
       $(document).ready(function() {
@@ -53,15 +55,27 @@
   </head>
 
   <body style="background: #fbb533;">
+    <div class="overlay">
+      <div class="nice-modal">
+          <div class="nice-modal-content row">
+              <iframe width="100%" height="50%" src="https://www.youtube.com/embed/KXGYmsyqJrY" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="nice-modal-footer">
+              <a href="#" class="btn btn-default pull-right" id="close-nice-modal">Fechar</a>
+          </div>
+      </div>
+    </div>
     <header>
       <section class="logo"></section>
       <section class="menu">
         <section class="col-6-12">
-          <p><strong>GABRIELA</strong> UM MUSICAL | <strong>TEATRO CETIP (INSTITUTO TOMIE OHTAKE)</strong> DE QUINTA A DOMINGO</p>
+          <p class="desk-only"><strong>GABRIELA</strong> UM MUSICAL | <strong>TEATRO CETIP (INSTITUTO TOMIE OHTAKE)</strong> DE QUINTA A DOMINGO</p>
+          <p class="mob-only" style="margin-left: 1%"><strong>GABRIELA</strong> UM MUSICAL &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://goo.gl/I6LIxi" style="color: #fff" class="link-barrinha"><span class="btn-mobi" style="background: #2f7e34;padding: 1.6em;padding-right: 6em;text-align: right;">COMPRE SEU INGRESSO</span></a></p>
         </section>
         <section class="col-6-12" style="padding:0">
           <p style="" class="curt">CURTÍSSIMA TEMPORADA</p>
-          <button class="comprar-top">COMPRE SEU INGRESSO</button>
+          <a href="http://premier.ticketsforfun.com.br/shows/show.aspx?sh=GABRIELA16&utm_source=Site-Gabriela-OMusical&utm_medium=Botao-Comprar-Ingresso&utm_term=Comprar-Ingresso-Gabriela&utm_content=BarraSuperior&utm_campaign=LandingPage
+"><button class="comprar-top">COMPRE SEU INGRESSO</button></a>
         </section>
       </section>
     </header>
@@ -80,25 +94,29 @@
 <!-- Full Page -->
 
 
-    <section class="col-1-1 section" style="height: 100vh;" >
+    <section class="col-1-1 section active" style="height: 100vh;" >
 
       <section class="col-4-12">
-        <ul class="menu-cat centered">
-          <a href="#sec1"><li class="categorias">INÍCIO&nbsp;&nbsp;</li></a>
-          <a href="#sec2"><li class="categorias">MUSICAL&nbsp;&nbsp;</li></a>
-          <a href="#sec3"><li class="categorias">ELENCO&nbsp;&nbsp;</li></a>
-          <a href="#sec4"><li class="categorias">TEATRO&nbsp;&nbsp;</li></a>
-        </ul>
+
 
 
         <p class="intro-header m-left">DEPOIS DE UM FILME E TRÊS NOVELAS </br> AGORA NOS PALCOS.
         </p>
+                <div class="centered-bar col-4-12"><div class="barra"></div></div>
         <img src="images/logo-gabriela.png" alt="Baseado na obra de Jorge Amado, Gabriela. Um Musical de João Falcão" class="logo-gabriela m-left" />
 
+        <div class="centered-bar col-4-12"><div class="barra"></div></div>
 
-        <p class="intro-header-bot m-left"><i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i>Assista a apresentação</p>
-        <button class="btn-compra m-left center">COMPRE SEU INGRESSO</button>
+          <a href="http://premier.ticketsforfun.com.br/shows/show.aspx?sh=GABRIELA16&utm_source=Site-Gabriela-OMusical&utm_medium=Botao-Comprar-Ingresso&utm_term=Comprar-Ingresso-Gabriela&utm_content=Home&utm_campaign=LandingPage
+"><button class="btn-compra m-left center">COMPRE SEU INGRESSO</button></a>
+
+              <img src="images/video.jpg" alt="CONHEÇA O ESPETÁCULO (clique para ver o vídeo)" class="thumb">
+            <p class="intro-header-bot m-left">
+              <i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i>
+              CONHEÇA O ESPETÁCULO</p>
+
       </section>
+
 
 
       <div id="container" class="container col-8-12">
@@ -112,70 +130,67 @@
 
 
 
-    <section class="section" style="height: 100vh;">
-    <ul>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    </ul>
+
+    <section class="section musical" style="height: 100vh;" id="sectionn">
+        <section class="musical-left col-1-2"></section>
+        <section class="musical-right col-1-2">
+            <img src="images/logo-small.png" class="logo-small">
+          <h1>UM MUSICAL</h1>
+    <div class="barra-h1"></div>
+<section class="content-mus">
+          <p>
+            Gabriela chega a Ilhéus em 1925, fugida de uma terrível seca no agreste.
+            O Sírio Nacib, dono do bar Vesúvio, a encontra no “mercado dos escravos”
+            e leva para trabalhar em seu estabelecimento. De início, ele não repara
+            na beleza da moça, escondida sob os trapos e a poeira do caminho, mas logo
+             ele se rende aos seus encantos, assim como boa parte dos vizinhos.</p>
+          <p>
+              Por conta da comida de Gabriela, o Vesúvio passa a receber cada vez mais
+              clientes, todos seduzidos pela presença inebriante da cozinheira. Após se
+              casar com Nacib, Gabriela tem conflitos com as obrigações conjugais que vão
+               de encontro ao seu espírito livre.</p>
+
+          <p>
+              Temperada com muita sensualidade, a narrativa romântica de Jorge Amado mostra
+              um rico panorama dos costumes da época e das transformações pelas quais a Bahia
+               da década de 20 passava. Com a abertura do porto aos grandes navios, são
+               inevitáveis o declínio dos coronéis, como Ramiro Bastos, e a ascensão de um
+               novo perfil de empresário, personificado por Mundinho Falcão. Gabriela
+                representa ainda todas as rupturas trazidas por esta nova configurações da
+                sociedade. </p>
+</section>
+        </section>
     </section>
 
-    <section class="section" style="height: 100vh;">
-    <ul>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    </ul>
-    </section>
+    <!-- <section class="section musical" style="height: 100vh;">
 
+    </section> -->
 
+    <section class="section musical" style="height: 100vh;" id="sectionn">
+        <section class="teatro-left col-1-2"></section>
+        <section class="teatro-right col-1-2">
+            <img src="images/logo-small.png" class="logo-small">
+          <h1>O TEATRO</h1>
+    <div class="barra-h1"></div>
 
-    <section class="section" style="height: 100vh;">
-    <ul>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    </ul>
+          <p>
+          O Teatro Cetip está localizado no prédio do Instituto Tomie Othake,
+          entre as avenidas Faria Lima e Pedroso de Moraes, em São Paulo no
+           bairro de Pinheiros.</p>
+      <section>
+          <p><strong style="font-weight: bolder;">Rua Coropé, 88 • Pinheiros, São Paulo • 05426-010</strong></p>
+          <a href="https://goo.gl/maps/3eXZLzS68xv" target="_blank"><p><strong style="font-weight: bolder; color:#d53627">
+            <i class="fa fa-caret-right" aria-hidden="true" style="color: #d53627; margin-right: 0.5%"></i>Veja no mapa</strong>
+          </p></a>
+      </section>
+        <a href="http://premier.ticketsforfun.com.br/shows/show.aspx?sh=GABRIELA16&utm_source=Site-Gabriela-OMusical&utm_medium=Botao-Comprar-Ingresso&utm_term=Comprar-Ingresso-Gabriela&utm_content=Secao-Teatro&utm_campaign=LandingPage
+"><button class="btn-compra-bottom m-left center">COMPRE SEU INGRESSO</button></a>
+        </section>
     </section>
 
 
 
 
-    <section class="section" style="height: 100vh;">
-    <ul>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    <li>010101</li>
-    </ul>
-    </section>
 
 
 <!-- Full Page -->
@@ -184,9 +199,20 @@
 
 <section class="bottom-bar">
   <div class="left col-1-2">
-    <button class="share"><i class="fa fa-share-alt white" aria-hidden="true" style="font-size: 1.5em"></i></button>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=gabrielamusical.com.br" target="_blank">
+    <button class="share"><i class="fa fa-share-alt white" aria-hidden="true" style="color: #fbb533;text-align:center;"></i></button>
+</a>
+    <!-- <p class="text-copy">© 2016 Gabriela Um Musical - Todos os direitos reservados.</p> -->
   </div>
   <div class="right col-1-2"></div>
+  <!-- <a href=""><i class="fa fa-arrow-circle-o-down fa-2x seta-down" aria-hidden="true"></i></a> -->
+    <a href="https://www.instagram.com/gabrielaummusical/" target="_blank">
+      <button class="social social1"><i class="fa fa-instagram white" aria-hidden="true" style="color: #fbb533"></i></button>
+    </a>
+
+    <a href="https://www.facebook.com/GabrielaUmMusical/" target="_blank">
+      <button class="social"><i class="fa fa-facebook white" aria-hidden="true" style="color: #fbb533"></i></button>
+    </a>
 </section>
 
 

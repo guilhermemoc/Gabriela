@@ -11,6 +11,83 @@ img {
   width: 100%;
 }
 
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none; }
+
+.nice-modal {
+  width: 50%;
+  height: 50%;
+  /*padding: 25px;*/
+  /*background: #fff;*/
+  /*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);*/
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 25%;
+  /*margin-left: -225px;*/
+  color: #fff;
+  /*text-align: justify;*/
+  display: none;
+  border-radius: 5px; }
+  .nice-modal .row {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+  }
+  .nice-modal .nice-modal-content ul {
+    width: 100%;
+    margin: 5px; }
+  .nice-modal .nice-modal-content ul li {
+    width: 100%;
+    padding: 0px 0px 4px 0px;
+    margin: 4px 0px 4px 0px;
+    border-bottom: 1px dashed #efefef; }
+  .nice-modal .nice-modal-header {
+    font-size: 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #efefef;
+    margin: 0px 0px 15px 0px; }
+  .nice-modal .nice-modal-footer {
+    /*border-top: 1px solid #efefef;*/
+    color: #fff;
+    font-size: 2em;
+    margin: 15px 0px 0px 0px;
+    padding: 15px 0px 0px 0px; }
+    .nice-modal .nice-modal-footer .btn {
+      margin-right: 10px; }
+      .nice-modal .nice-modal-footer .btn:nth-child(1) {
+        margin-right: 0px; }
+
+.nice-result {
+  width: 280px;
+  border-radius: 3px;
+  padding: 30px 0px 30px 70px;
+  position: fixed;
+  z-index: 2000;
+  left: 50%;
+  top: 50%;
+  margin: -40px 0px -40px -140px;
+  display: none; }
+  .nice-result.success {
+    color: #fff;
+    background: url(/img/admin/success-icon.png) no-repeat 18px 26px #7AC143; }
+  .nice-result.danger {
+    color: #fff;
+    background: url(/img/admin/danger-icon.png) no-repeat 18px 22px #b52e31; }
+  .nice-result .nice-result-message {
+    text-align: left; }
+
+
 input[type=checkbox] {
   display: none;
 }
@@ -87,13 +164,15 @@ input[type=checkbox]:checked + label:before {
     /* max-width: 60%; */
     max-width: 48%;
     margin: 0 auto;
-    height: 95vh;
+    height: 100vh;
     padding: 5%;
+    padding-left: 0;
     float: right;
     padding-bottom: 0;
     padding-top: 0;
     width: 100%;
     overflow: hidden;
+    margin-right: 5em;
 }
 
 .scene {
@@ -169,9 +248,21 @@ input[type=checkbox]:checked + label:before {
   float: right;
   background: #2f7e34;
   border: none;
-  height: 2em;
-  width: 30%;
+  height: 2.9em;
+  width: 29%;
   color: #fff;
+  font-size: 7pt;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  transition: 0.2s ease-in
+}
+
+
+
+.comprar-top:hover{
+  background-color: #155119;
+  color: #fff;
+  cursor: pointer;
 }
 
 body .curt{
@@ -179,6 +270,13 @@ body .curt{
    width: 67%; display:
     inline-block
 }
+
+.logo-small{
+  display: block;
+  width: 20%;
+  margin-bottom: 1em;
+}
+
 
 
 @font-face {
