@@ -1,9 +1,4 @@
-
-
-
-
-  @media (max-width: 500px){
-    /*.container {display: none;}*/
+@media (max-width: 500px){
     .menu-cat{
       margin-left: 0;
       margin: 0 auto;
@@ -19,27 +14,16 @@
     .m-left{
       margin-left: 0
     }
-
-    /*.btn-compra{
-      padding: 0;
-      margin: 1em auto;
-      text-align: center;
-      display: block;
-      width: 70%;
-    }*/
-
     .share{
       margin-left: 22%;
     }
 
     .comprar-top{display: none}
 
-
     .menu {
     width: 100%;
     height: 1.5em;
   }
-
 
   body .menu p{
     font-size: 5pt;
@@ -50,61 +34,65 @@
     word-spacing: -2px;
   }
 
-
-  .menu-cat {
-    margin: 3em auto 0;
-  }
-
-  /*
-  .logo-gabriela{
-    width: 80%;
-    text-align: center;
-    display: block;
-    margin: 1em auto;
-  }*/
-
-  /*.scene{display: none}
-  #scene{display: none}
-  .layer{display: none}*/
-
-  .mob-only{
-    display: block;}
-    .mob-only  p{
-    font-size: 5pt;
-    width: 100% !important;
-    line-height: 1em;
-    margin-left: 0;
-    text-align: center;
-    word-spacing: -2px;
+    .menu-cat {
+      margin: 3em auto 0;
     }
 
-  .desk-only{
-    display: none;
+    .mob-only{
+      display: block;}
+      .mob-only  p{
+      font-size: 5pt;
+      width: 100% !important;
+      line-height: 1em;
+      margin-left: 0;
+      text-align: center;
+      word-spacing: -2px;
+      }
+
+    .desk-only{
+      display: none;
+    }
+    .curt{
+    display: none !important;
+    }
+
+
+    }
+
+@media (max-width: 1024px){
+    .regua{
+      width: 61%;
+      margin: 0 auto;
+      margin-bottom: 4em;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+  .regua{
+    width: 61%;
+    margin: 0 auto;
+    margin-bottom: 4em;
   }
-  .curt{
-  display: none !important;
-  }
-
-
-  }
 
 
 
-
-  @media (max-width: 768px){
-    body .curt {
-        text-align: right;
-        width: 46% !important;
-        display: inline-block;
+  body .curt {
+    text-align: right;
+    width: 46% !important;
+    display: inline-block;
     }
     .comprar-top {
-    float: right;
-    background: #2f7e34;
-    border: none;
-    height: 3em;
-    width: 50%;
-    color: #fff;
-    font-size: 9px;}
+      float: right;
+      background: #2f7e34;
+      border: none;
+      height: 3em;
+      width: 50%;
+      color: #fff;
+      font-size: 9px;
+    }
 
     .intro-header {
       font-family: Gotham;
@@ -135,14 +123,14 @@
     font-weight: 600;
     letter-spacing: 1.5px;
     outline: none;
-}
+  }
 
-.intro-header {
+  .intro-header {
     font-size: 6pt !important;
-}
-.intro-header-bot {
-    font-family: Gotham;
-    font-size: 7pt;}
+  }
+  .intro-header-bot {
+      font-family: Gotham;
+      font-size: 7pt;}
 
     .musical .musical-right p {
         margin: 0.5em auto;
@@ -160,24 +148,24 @@
 
 
     .btn-compra {
-    width: 82%;
-    height: 4em;
-    border-radius: 24px;
-    background-color: #2f7e34;
-    color: #fff;
-    border: none;
-    margin-top: 2em;
-    transition: 0.2s ease-in;
-    margin: 2em auto;
-    display: block;
-    position: relative;
-    margin-left: 46%;
-    font-family: g-book;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    outline: none;
-}
+      width: 82%;
+      height: 4em;
+      border-radius: 24px;
+      background-color: #2f7e34;
+      color: #fff;
+      border: none;
+      margin-top: 2em;
+      transition: 0.2s ease-in;
+      margin: 2em auto;
+      display: block;
+      position: relative;
+      margin-left: 46%;
+      font-family: g-book;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      outline: none;
+  }
 
       .musical .musical-left{display: none;}
       body .musical .teatro-left{display: none;}
@@ -186,8 +174,6 @@
     .barra{display: none;}
 
     .container {
-      /* position: relative; */
-      /* max-width: 60%; */
       max-width: 64%;
       margin: 0 auto;
       height: 95vh;
@@ -215,7 +201,7 @@
     font-weight: 600;
     letter-spacing: 1.5px;
     outline: none;
-}
+  }
 
 
       .share {
@@ -234,33 +220,165 @@
       .intro-header {
         font-size: 10pt;
       }
-#fullpage .section { margin:0 !important;}
-.fp-section, .fp-table{height: 568px; margin: initial;}
+  #fullpage .section { margin:0 !important;}
+  .fp-section, .fp-table{height: 568px; margin: initial;}
 
 
-.musical-left{
-  display: none;
+  .musical-left{
+    display: none;
+  }
+
+
+  .musical .musical-right {
+      background-color: #fbb533;
+      margin: 10vh auto 0;
+      margin-left: none;
+      float: none;
+      width: 80%;
+      text-align: center;
+  }
+
+  .musical .musical-right h1 {
+      font-family: g-bold;
+      font-size: 1.5em;
+      color: #4d2035;
+      text-align: center;
+      float: none;
+      border-bottom: none
+  }
+
+    .desk-only{
+      display: none;
+    }
+
+    .mob-only{
+      display: block;}
+    .btn-mobi{
+      background: #2f7e34;
+      padding: 1em !important;
+      padding-right: 6em;
+      text-align: right;
+      float: right;
+      margin-top: -10px;
+      margin-right: -4px;
+  }
+    .comprar-top{display: none;}
+    .m-left{margin-left: 0;}
+
+  .logo-gabriela {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+  }
+
+  .btn-compra{
+    margin-left: 0;
+    margin: 50px auto;
+    width: 31%;
+  }
+
+  /*.container{
+    display: none !Important;
+  }*/
+
+  .thumb{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .intro-header-bot{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .last-button{
+    padding-bottom: 40%;
+  }
+
+  .curt{
+    display: none !important;
+  }
+  .menu p {
+      line-height: 1em;
+  }
+
+  .share {
+    margin-left: 20%;
+  }
 }
 
 
-.musical .musical-right {
-    background-color: #fbb533;
-    margin: 10vh auto 0;
-    margin-left: none;
-    float: none;
+@media (min-width: 1917px){
+  .thumb {
+    width: 130px;
+    text-align: center;
+    margin: 3% auto;
+    display: block;
+    float: right;
+    margin-right: 4%;
+    }
+    .musical .musical-right p {
+    margin: 1.5em auto;
     width: 80%;
-    text-align: center;
-}
-
-.musical .musical-right h1 {
-    font-family: g-bold;
-    font-size: 1.5em;
+    line-height: 31px;
+    font-family: Arial, sans-serif;
+    font-size: 17.5px;
+    float: left;
     color: #4d2035;
+    padding-top: 1em;
+    padding-bottom: 0em;
+  }
+  .barra-h1 {
+    width: 1.5em;
+    height: 3px;
+    background: #d53627;
     text-align: center;
-    float: none;
-    border-bottom: none
-}
+    margin: 3.4em auto;
+    display: block;
+    position: absolute;
+  }
+  .container {
+    margin-top: 1%;
+  }
+  .musical .teatro-right {
+      background-color: #fbb533;
+      margin: 30vh auto 0 !important;
+      width: 39%;
+  }
+  .barra-h1 {
+      width: 1.5em;
+      height: 3px;
+      background: #d53627;
+      text-align: center;
+      margin: 3em auto;
+      display: block;
+      position: absolute;
+  }
+  .intro-header {
+      font-family: Gotham;
+      font-size: 11pt;
+      color: #562435;
+      text-align: center;
+      margin-top: calc(100vh / 4);
+    }
 
-
-
+    .intro-header-bot {
+    margin-top: -10px;
+    }
+    .musical p {
+    margin: 1.5em auto;
+    width: 82%;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 17.5px;
+    float: left;
+    color: #4d2035;
+    padding-top: 2em;
+    }
+    body .btn-compra-bottom {
+    width: 33% !Important;
+    }
+    .musical .teatro-right {
+    margin: 10vh auto 0 !important;
+    }
 }

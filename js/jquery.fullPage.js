@@ -155,8 +155,8 @@
             paddingTop: 0,
             paddingBottom: 0,
             fixedElements: null,
-            responsive: 500, //backwards compabitility with responsiveWiddth
-            responsiveWidth: 500,
+            responsive: 767, //backwards compabitility with responsiveWiddth
+            responsiveWidth: 767,
             responsiveHeight: 0,
 
             //Custom selectors

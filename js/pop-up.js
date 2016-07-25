@@ -10,6 +10,12 @@ $(function(){
           }, 200);
       },
       close: function() {
+          var $video = $('#iframe-video-youtube-nice-modal');
+          var $parent = $video.parent();
+          var htmlIframe = $parent.html();
+          $parent.html('');
+          $parent.html(htmlIframe);
+
           $('.nice-modal').fadeOut();
           setTimeout(function(){
               $('.overlay').fadeOut();
