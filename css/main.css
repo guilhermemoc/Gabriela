@@ -705,7 +705,7 @@ button {
   width: 250px;
   height: 250px;
   background-color: #fff;
-  margin: 3px auto;
+  margin: -3px 0 0 -10px;
   text-align: center;
   display: inline-block;
   transition: 0.3s ease-in;
@@ -738,19 +738,34 @@ button {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   .thumbni-ul{
     text-align: center;
   }
 
   .thumbni:hover{
     background-color: rgba(170, 46, 48, 0.56) !important;
-    z-index: 2;
+    z-index: -2;
   }
 
 
   .aparece{
     opacity: 0;
+    z-index: 99;
     transition: 0.3s ease-in;
+    background-color: rgba(170, 46, 48, 0.90) !important;
   }
   .aparece:hover{
     opacity: 1;
@@ -758,18 +773,53 @@ button {
   }
 
 
+
   .thumbni p {
     color: #fff;
     position: absolute;
-    font-size: 40px;
+    font-size: 23px;
     width: 250px;
     height: 250px;
     text-align: center;
     vertical-align: middle;
-    line-height: 280px;
+    line-height: 230px;
     font-family: g-bold;
-    background-color: rgba(170, 46, 48, 0.56) !important;
+
   }
+
+.aparece-persona:hover{
+}
+
+.aparece:hover + .aparece-persona {
+    opacity: 1;
+    cursor: default;
+    transition: 0.3s ease-in;
+  }
+
+.aparece-persona{
+  background-color: transparent !important;
+  line-height: 300px !important;
+  opacity: 0;
+  height: 1px !important;
+  z-index: 999;
+  font-weight: lighter;
+  font-family: g-light !Important;
+  transition: 0.3s ease-in;
+  font-size: 10px !Important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   .elenco-slider {
       padding-top: 1%;
       width: 70%;
@@ -778,11 +828,41 @@ button {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
     .elenco-slider h1{
       font-family: g-bold;
       font-size: 2em;
       color: #4d2035;
       text-align: center;
     }
+
+
+
+  .red-lines{
+    width: 25px;
+    border: 1.5px #d53627 solid;
+    margin: 1% auto;
+    display: block;
+    text-align: center;
+  }
+
+    .flowers {
+      width: 200px;
+      position: absolute;
+      left: -22%;
+      height: 100vh;
+      overflow: hidden;
+      perspective: 100vh;
+  }
 
 .fp-slidesNav, .bottom{display: none;}

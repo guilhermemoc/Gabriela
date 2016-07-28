@@ -220,7 +220,7 @@
       .intro-header {
         font-size: 10pt;
       }
-  #fullpage .section { margin:0 !important;}
+  #fullpage .section { margin:0 auto !important;}
   .fp-section, .fp-table{height: 568px; margin: initial;}
 
 

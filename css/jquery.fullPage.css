@@ -59,6 +59,7 @@ html.fp-enabled,
 .fp-slidesContainer {
     float: left;
     position: relative;
+    margin-top: -7%;
 }
 .fp-controlArrow {
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
@@ -82,6 +83,8 @@ html.fp-enabled,
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
+    content: "\f18e" !important;
+    font-family: "FontAwesome";
 }
 .fp-controlArrow.fp-next {
     right: 15px;
@@ -198,7 +201,7 @@ html.fp-enabled,
     height: 10px;
     margin: -5px 0px 0px -5px;
     background-color: #2f7e34;
-    border-color:#2f7e34; 
+    border-color:#2f7e34;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
