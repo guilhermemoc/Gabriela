@@ -742,28 +742,39 @@ button {
 
 
 
+   .thumbni-ul{
+   }
 
-  .thumbni{
-    opacity: 0;
+   .thumbni{
+     text-align: center;
+     width: 250px;
+     height: 250px;
+     display: inline-block;
+     list-style: none;
+     background: #ccc;
+     position: relative;
+   }
 
-    transition: 0.3s ease-in;
-  }
-    .thumbni:hover{
-      background-color: rgba(170, 46, 48, 0.90) !important;
-      opacity: 1;
-      z-index: 9999;
-    }
-    .thumbni p {
-      color: #fff;
+   .thumbni p{
+     z-index: 2;
+     margin: 0;
+     display: block;
+     position: absolute;
+     width: 100%;
+     top: 50%;
+     transform: translateY(-50%);
+     opacity: 0;
+     transition: .2s;
+   }
+
+  .thumbni, .thumbni-ul:before {
       position: absolute;
-      font-size: 23px;
-      width: 250px;
-      height: 250px;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 230px;
-      font-family: g-bold;
-    }
+      background: rgba(255, 0, 0, 0.5);
+      z-index: 1;
+      content: '';
+      opacity: 0;
+      transition: .2s;
+      }
 
 
 
@@ -771,40 +782,81 @@ button {
 
 
 
-  .thumbni-ul{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*.thumbni-ul{
     text-align: center;
   }
 
-  /*.thumbni:hover{
+  .thumbni:hover{
     background-color: rgba(170, 46, 48, 0.56) !important;
     z-index: -2;
-  }*/
-  /*.aparece{
+  }
+
+
+  .aparece{
     opacity: 0;
     z-index: 99;
     transition: 0.3s ease-in;
     background-color: rgba(170, 46, 48, 0.90) !important;
-  }*/
-  /*.aparece:hover{
+  }
+  .aparece:hover{
     opacity: 1;
     cursor: default;
-  }*/
+  }
 
-/*.aparece:hover + .aparece-persona {
+
+
+  .thumbni p {
+    color: #fff;
+    position: absolute;
+    font-size: 23px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 230px;
+    font-family: g-bold;
+
+  }
+
+.aparece-persona:hover{
+}
+
+.aparece:hover + .aparece-persona {
     opacity: 1;
     cursor: default;
     transition: 0.3s ease-in;
-  }*/
+  }
+
 .aparece-persona{
   background-color: transparent !important;
   line-height: 300px !important;
+  opacity: 0;
   height: 1px !important;
   z-index: 999;
   font-weight: lighter;
   font-family: g-light !Important;
   transition: 0.3s ease-in;
   font-size: 10px !Important;
-}
+}*/
 
 
 
